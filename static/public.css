@@ -1,0 +1,101 @@
+span{
+  cursor:pointer;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+background: #fff;
+  min-width: 320px;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  height: 1.40625rem;
+}
+#footer .footer {
+  height: 100%;
+  position: relative;
+}
+#footer .footer:before {
+  -webkit-transform: scaleY(0.6);
+  transform: scaleY(0.6);
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ccc;
+  height: 1px;
+  z-index: 999;
+}
+#footer a {
+  width: 25%;
+  height: 100%;
+  display: block;
+  float: left;
+  position: relative;
+  color: #777777;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.40625rem;
+}
+#footer a .footer-icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+#footer a.index-btn .index-icon {
+  background-image: url(./ico_image/index-icon.png);
+  background-size: 100% 100%;
+}
+#footer a.cart-btn .cart-icon {
+  background-image: url(./ico_image/cart-icon.png);
+  background-size: 100% 100%;
+}
+#footer a.ewm-btn .ewm-icon {
+  background-image: url(./ico_image/ewm-icon1.png);
+  background-size: 100% 100%;
+}
+#footer a.center-btn .center-icon {
+  background-image: url(./ico_image/center-icon.png);
+  background-size: 100% 100%;
+}
+#footer a .footer-txt {
+  font-size: 12px;
+  height: 20px;
+  display: block;
+  margin-top: -1rem;
+}
+.loadData{
+  display: block;
+  width: 10rem;
+  line-height: 1rem;
+  animation:myfirst 3s;
+  -moz-animation:myfirst 3s; /* Firefox */
+  -webkit-animation:myfirst 3s; /* Safari and Chrome */
+  -o-animation:myfirst 3s; /* Opera */
+}
+@keyframes myfirst
+{
+  from {line-height: 1rem;}
+  to {line-height: 2rem;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+  from {line-height: 1rem;}
+  to {line-height: 2rem;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+  from {line-height: 1rem;}
+  to {line-height: 2rem;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+  from {line-height: 1rem;}
+  to {line-height: 2rem;}
+}

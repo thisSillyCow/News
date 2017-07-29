@@ -1,0 +1,231 @@
+@charset "utf-8";
+/*清除样式star*/
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+/*利用阴影来填充掉input自动填充色*/
+
+a,
+img,
+button,
+input,
+textarea,
+select,
+span,
+div,
+ul,
+li {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+footer,
+nav,
+article,
+section {
+    margin: 0;
+    padding: 0
+}
+
+header,
+footer,
+nav,
+article {
+    display: block
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+img {
+    border: 0;
+    vertical-align: top
+}
+
+em, li, i {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol,
+ul,
+li {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 62.5%;
+    font-weight: normal
+}
+
+input,
+select,
+button {
+    outline: 0;
+    resize: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+button {
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+    color: #006a92;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -webkit-focus-ring-color: transparent
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+video,
+embed {
+    vertical-align: top;
+    max-width: 100%
+}
+
+video {
+    background: #000
+}
+
+html,
+body {
+    height: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transmyform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+body {
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+    background: #fff;
+    -webkit-text-size-adjust: none;
+    position: relative;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 14px;
+    height: auto;
+}
+
+.clr:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    line-height: 0
+}
+
+.clr {
+    zoom: 1
+}

@@ -1,0 +1,152 @@
+@zIndex : 10;
+@opacityWidthHeight : 10rem;
+@toastWidthHeight : 3rem;
+@backgroundToast : #000;
+@opacitySize : .7;
+@loaderRowBackground: #fff;
+@loaderRowWidth : 2px;
+@loaderRowHeight:1.5rem;
+@marginLeft:@toastWidthHeight/2;
+@marginTop:0.3rem;
+@loaderRadius:.5rem;
+.opacity{
+  position: fixed;
+  width: @opacityWidthHeight;
+  height: @opacityWidthHeight * 2;
+  top: 0;
+  z-index:@zIndex;
+  overflow-y: hidden;
+}
+.loadToast{
+  position: absolute;
+  top:6rem;
+  left: (@opacityWidthHeight - @toastWidthHeight)/2;
+  width: @toastWidthHeight;
+  height: @toastWidthHeight;
+  background: @backgroundToast;
+  z-index: @zIndex;
+  opacity: @opacitySize;
+}
+.toastList{
+  width: @toastWidthHeight;
+  height: @toastWidthHeight - 1.2;
+}
+@keyframes myLoadingLeaf0{
+  0% {opacity: @opacitySize ;}
+  15%{opacity: @opacitySize - 0.2 ;}
+  30%{opacity: @opacitySize - 0.4 ;}
+}
+@-webkit-keyframes  myLoadingLeaf0{
+  0% {opacity: @opacitySize ;}
+  15%{opacity: @opacitySize - 0.2 ;}
+  30%{opacity: @opacitySize - 0.4 ;}
+}
+@keyframes myLoadingLeaf1{
+  15%{opacity: @opacitySize ;}
+  30%{opacity: @opacitySize - 0.2 ;}
+  45%{opacity: @opacitySize - 0.4 ;}
+}
+@-webkit-keyframes  myLoadingLeaf1{
+  15%{opacity: @opacitySize ;}
+  30%{opacity: @opacitySize - 0.2 ;}
+  45%{opacity: @opacitySize - 0.4 ;}
+}
+@keyframes myLoadingLeaf2{
+  30%{opacity: @opacitySize ;}
+  45%{opacity: @opacitySize - 0.2 ;}
+  60%{opacity: @opacitySize - 0.4 ;}
+}
+@-webkit-keyframes  myLoadingLeaf2{
+  30%{opacity: @opacitySize ;}
+  45%{opacity: @opacitySize - 0.2 ;}
+  60%{opacity: @opacitySize - 0.4 ;}
+}
+@keyframes myLoadingLeaf3{
+  45%{opacity: @opacitySize ;}
+  60%{opacity: @opacitySize - 0.2 ;}
+  80%{opacity: @opacitySize - 0.4 ;}
+}
+@-webkit-keyframes  myLoadingLeaf3{
+  45%{opacity: @opacitySize ;}
+  60%{opacity: @opacitySize - 0.2 ;}
+  80%{opacity: @opacitySize - 0.4 ;}
+}
+@keyframes myLoadingLeaf4{
+  60%{opacity: @opacitySize ;}
+  80%{opacity: @opacitySize - 0.2 ;}
+  95%{opacity: @opacitySize - 0.4 ;}
+}
+@-webkit-keyframes  myLoadingLeaf4{
+  60%{opacity: @opacitySize ;}
+  80%{opacity: @opacitySize - 0.2 ;}
+  95%{opacity: @opacitySize - 0.4 ;}
+}
+@keyframes myLoadingLeaf5{
+  80%{opacity: @opacitySize ;}
+  95%{opacity: @opacitySize - 0.2;}
+  110%{opacity: @opacitySize - 0.4;}
+}
+@-webkit-keyframes  myLoadingLeaf5{
+  80%{opacity: @opacitySize ;}
+  95%{opacity: @opacitySize - 0.2;}
+  110%{opacity: @opacitySize - 0.4;}
+}
+.loadDate( @transFromDate){
+  margin-left: @marginLeft;
+  margin-top: @marginTop;
+  transform: rotate(@transFromDate);
+  position: absolute;
+  display: block;
+  background: @loaderRowBackground;
+  opacity: @opacitySize - 0.4;
+  width: @loaderRowWidth;
+  height:@loaderRowHeight;
+}
+.loadingLeaf0{
+  .loadDate(0deg);
+  animation: myLoadingLeaf0 1s infinite;
+  -webkit-animation: myLoadingLeaf0 1s infinite;
+}
+.loadingLeaf1{
+  .loadDate(30deg);
+  animation: myLoadingLeaf1 1s infinite;
+  -webkit-animation: myLoadingLeaf1 1s infinite;
+}
+.loadingLeaf2{
+  .loadDate(60deg);
+  animation: myLoadingLeaf2 1s infinite;
+  -webkit-animation: myLoadingLeaf2 1s infinite;
+}
+.loadingLeaf3{
+  .loadDate(90deg);
+  animation: myLoadingLeaf3 1s infinite;
+  -webkit-animation: myLoadingLeaf3 1s infinite;
+}
+.loadingLeaf4{
+  .loadDate(120deg);
+  animation: myLoadingLeaf4 1s infinite;
+  -webkit-animation: myLoadingLeaf4 1s infinite;
+}
+.loadingLeaf5{
+  .loadDate(150deg);
+  animation: myLoadingLeaf5 1s infinite;
+  -webkit-animation: myLoadingLeaf5 1s infinite;
+}
+.loadingLeaf6{
+  display: block;
+  width: @loaderRadius;
+  height: @loaderRadius;
+  border-radius: @loaderRadius;
+  background: @backgroundToast;
+  top: 0.8rem;
+  position: absolute;
+  left: 1.26rem;
+}
+.toastContent{
+  display:block;
+  width: @toastWidthHeight;
+  line-height: 1rem;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
